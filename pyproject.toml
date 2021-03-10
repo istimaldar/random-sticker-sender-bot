@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "rndstsnd"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["istimaldar <istimaldar@gmail.com>"]
 
@@ -8,6 +8,7 @@ authors = ["istimaldar <istimaldar@gmail.com>"]
 python = "^3.9"
 python-telegram-bot = "^13.3"
 dynaconf = "^3.1.4"
+cachetools = "^4.2.1"
 
 [tool.poetry.dev-dependencies]
 

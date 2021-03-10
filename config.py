@@ -12,6 +12,8 @@ settings = Dynaconf(
         Validator("messages.start", must_exist=True, is_type_of=str),
         Validator("messages.help", must_exist=True, is_type_of=str),
         Validator("messages.privacy", must_exist=True, is_type_of=str),
-        Validator("messages.unknown", must_exist=True, is_type_of=str)
+        Validator("messages.unknown", must_exist=True, is_type_of=str),
+        Validator("cache.size", default=256, is_type_of=int, gt=0),
+        Validator("cache.ttl", default=86400, is_type_of=int, gt=0)
     ]
 )
